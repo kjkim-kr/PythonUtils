@@ -25,4 +25,4 @@ def get_sqrt_matrix(x: np.ndarray) -> np.ndarray:
     eiv, s = np.linalg.eig(x)
     s_inv = np.linalg.inv(s)
 
-    return np.dot(np.dot(s, np.diag(np.sqrt(eiv))), s_inv)
+    return s.dot(np.diag(np.sqrt(eiv))).dot(s_inv)
