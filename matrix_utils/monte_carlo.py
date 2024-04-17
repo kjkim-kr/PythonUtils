@@ -20,5 +20,5 @@ if __name__ == '__main__':
     # 1000000  ->  3.1414959999999996
     # pi = 3.141592..
     for pt in range(7):
-        val_10 = [monte_carlo_test(10 ** pt) for _ in range(100)]
+        val_10 = [monte_carlo_test(10 ** pt) for _ in range(50)]
         print(10 ** pt, ' -> ', np.mean(val_10))
